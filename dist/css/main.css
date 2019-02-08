@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Shade|Carrois+Gothic+SC|Fredericka+the+Great|Londrina+Outline|Megrim|Codystar|Montserrat+Subrayada");
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -59,7 +60,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/pic.jpg");
+      background: url("../img/UDpic.png") center;
       border-radius: 50%;
       border: solid 3px #eece1a; }
   .menu .nav-item {
@@ -122,7 +123,7 @@
     transform: translate3d(100%, 0, 0);
     -webkit-transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../dist/img/pic.jpg");
+      background: url("../img/UDpic.png") center;
       width: 150px;
       height: 150px; } }
 
@@ -161,10 +162,12 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
+    font-family: "Londrina Outline", cursive;
     font-size: 6rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
+    font-family: "Codystar", cursive;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(73, 73, 73, 0.5); }

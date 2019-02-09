@@ -10,7 +10,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #000;
+    background: #fff;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -38,13 +38,13 @@
     height: 100vh;
     overflow: hidden; }
   .menu .menu-nav {
-    background: rgba(193, 183, 206, 0.9); }
+    background: rgba(36, 52, 86, 0.9); }
   .menu .menu-branding {
-    background: rgba(206, 198, 216, 0.9); }
+    background: rgba(44, 63, 104, 0.9); }
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: rgba(193, 183, 206, 0.63);
+    background: rgba(36, 52, 86, 0.486);
     list-style: none;
     transform: translate3d(0 -100%, 0);
     -webkit-transform: translate3d(0, -100%, 0);
@@ -53,7 +53,7 @@
       transform: translate3d(0, 0, 0);
       -webkit-transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: rgba(206, 198, 216, 0.63);
+    background: rgba(44, 63, 104, 0.486);
     transform: translate3d(0 100%, 0);
     -webkit-transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
@@ -82,7 +82,7 @@
     text-transform: uppercase;
     padding: 1rem, 0;
     font-weight: 300;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
@@ -104,8 +104,8 @@
   box-sizing: border-box; }
 
 body {
-  background: rgba(206, 198, 216, 0.63);
-  color: #000;
+  background: rgba(44, 63, 104, 0.486);
+  color: #fff;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -121,7 +121,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(206, 198, 216, 0.9); }
+      background: rgba(44, 63, 104, 0.9); }
 
 h1,
 h2,
@@ -139,7 +139,7 @@ h3 {
     font-family: "Codystar", cursive;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(211, 204, 220, 0.5); }
+    background: rgba(47, 67, 111, 0.5); }
 
 a {
   color: #fff;
@@ -194,7 +194,7 @@ main {
   grid-area: job3; }
 
 .job {
-  background: rgba(219, 213, 226, 0.63);
+  background: rgba(52, 74, 122, 0.486);
   padding: 0.5rem;
   border-bottom: #eece1a 5px solid; }
 
@@ -220,11 +220,11 @@ main {
     color: #000; }
 
 .btn-dark {
-  background: rgba(78, 65, 94, 0.63);
+  background: rgba(0, 0, 0, 0.486);
   color: #fff; }
 
 .btn-light {
-  background: rgba(255, 255, 255, 0.63);
+  background: rgba(180, 194, 223, 0.486);
   color: #333; }
 
 .boxes {
@@ -249,8 +249,8 @@ main {
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: rgba(180, 168, 195, 0.63);
-  color: #000;
+  background: rgba(29, 41, 68, 0.486);
+  color: #fff;
   height: 60px; }
 
 @media screen and (min-width: 1171px) {

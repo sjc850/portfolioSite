@@ -12,7 +12,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -34,7 +34,7 @@
 
       //LINE 3 ROTATE
       &:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6px);
+        transform: rotate(135deg) translate(-6px, 6px);
       }
     }
   }
@@ -46,7 +46,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  //opacity: 0.9;
   visibility: hidden;
 
   &.show {
@@ -63,6 +63,15 @@
     width: 50%;
     height: 100vh;
     overflow: hidden;
+  }
+
+  .menu {
+    &-nav {
+      background: rgba(darken($primary-color, 5), 0.9);
+    }
+    &-branding {
+      background: rgba($primary-color, 0.9);
+    }
   }
 
   &-nav {
@@ -126,7 +135,7 @@
     text-transform: uppercase;
     padding: 1rem, 0;
     font-weight: 300;
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 

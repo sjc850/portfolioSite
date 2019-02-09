@@ -10,7 +10,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: #000;
     transition: all 0.5s ease-out; }
   .menu-btn.close {
     transform: rotate(180deg); }
@@ -19,13 +19,12 @@
     .menu-btn.close .btn-line:nth-child(2) {
       opacity: 0; }
     .menu-btn.close .btn-line:nth-child(3) {
-      transform: rotate(-45deg) translate(7px, -6px); }
+      transform: rotate(135deg) translate(-6px, 6px); }
 
 .menu {
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -38,10 +37,14 @@
     width: 50%;
     height: 100vh;
     overflow: hidden; }
+  .menu .menu-nav {
+    background: rgba(193, 183, 206, 0.9); }
+  .menu .menu-branding {
+    background: rgba(206, 198, 216, 0.9); }
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: rgba(193, 183, 206, 0.63);
     list-style: none;
     transform: translate3d(0 -100%, 0);
     -webkit-transform: translate3d(0, -100%, 0);
@@ -50,7 +53,7 @@
       transform: translate3d(0, 0, 0);
       -webkit-transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #444;
+    background: rgba(206, 198, 216, 0.63);
     transform: translate3d(0 100%, 0);
     -webkit-transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
@@ -79,7 +82,7 @@
     text-transform: uppercase;
     padding: 1rem, 0;
     font-weight: 300;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
@@ -96,6 +99,111 @@
 
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background: rgba(206, 198, 216, 0.63);
+  color: #000;
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5; }
+  body#bg-img {
+    background: url(../img/1.jpg);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#bg-img .overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(206, 198, 216, 0.9); }
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400; }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    font-family: "Londrina Outline", cursive;
+    font-size: 6rem; }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    font-family: "Codystar", cursive;
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(211, 204, 220, 0.5); }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%; }
+
+.text-secondary {
+  color: #eece1a; }
+
+main {
+  padding: 4rem;
+  min-height: calc(100vh - 60px); }
+  main .icons {
+    margin-top: 1rem; }
+    main .icons a {
+      padding: 0.4rem; }
+      main .icons a:hover {
+        color: #eece1a;
+        transition: all 0.5s ease-out; }
+  main#home {
+    overflow: hidden; }
+    main#home h1 {
+      margin-top: 20vh; }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr); }
+
+.bio-image {
+  grid-area: bioimage;
+  margin: auto;
+  border-radius: 50%;
+  border: #eece1a 3px solid; }
+
+.bio {
+  grid-area: bio;
+  font-size: 1.5rem; }
+
+.job-1 {
+  grid-area: job1; }
+
+.job-2 {
+  grid-area: job2; }
+
+.job-3 {
+  grid-area: job3; }
+
+.job {
+  background: rgba(219, 213, 226, 0.63);
+  padding: 0.5rem;
+  border-bottom: #eece1a 5px solid; }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(180, 168, 195, 0.63);
+  color: #000;
+  height: 60px; }
 
 @media screen and (max-width: 768px) {
   main {
@@ -125,76 +233,11 @@
     .menu-branding .portrait {
       background: url("../img/UDpic.png") center;
       width: 150px;
-      height: 150px; } }
+      height: 150px; }
+  .about-info {
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
     margin-top: 10vh; } }
-
-* {
-  box-sizing: border-box; }
-
-body {
-  background: #444;
-  color: #fff;
-  height: 100%;
-  margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
-  body#bg-img {
-    background: url(../img/1.jpg);
-    background-attachment: fixed;
-    background-size: cover; }
-    body#bg-img .overlay {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-      background: rgba(68, 68, 68, 0.9); }
-
-h1,
-h2,
-h3 {
-  margin: 0;
-  font-weight: 400; }
-  h1.lg-heading,
-  h2.lg-heading,
-  h3.lg-heading {
-    font-family: "Londrina Outline", cursive;
-    font-size: 6rem; }
-  h1.sm-heading,
-  h2.sm-heading,
-  h3.sm-heading {
-    font-family: "Codystar", cursive;
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
-
-a {
-  color: #fff;
-  text-decoration: none; }
-
-header {
-  position: fixed;
-  z-index: 2;
-  width: 100%; }
-
-.text-secondary {
-  color: #eece1a; }
-
-main {
-  padding: 4rem;
-  height: 100%; }
-  main .icons {
-    margin-top: 1rem; }
-    main .icons a {
-      padding: 0.4rem; }
-      main .icons a:hover {
-        color: #eece1a;
-        transition: all 0.5s ease-out; }
-  main#home {
-    overflow: hidden; }
-    main#home h1 {
-      margin-top: 20vh; }

@@ -1,13 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Shade|Carrois+Gothic+SC|Fredericka+the+Great|Londrina+Outline|Megrim|Codystar|Montserrat+Subrayada");
+@import url("https://fonts.googleapis.com/css?family=Antic|Quicksand|Codystar|Antic|Barrio|Londrina+Shadow|Londrina+Sketch|Quicksand|Text+Me+One|Zilla+Slab+Highlight");
 
-//font-family: 'Fredericka the Great', cursive;
-//font-family: 'Bungee Inline', cursive;
-//font-family: 'Londrina Outline', cursive;
-//font-family: 'Carrois Gothic SC', sans-serif;
-//font-family: 'Megrim', cursive;
-//font-family: 'Bungee Shade', cursive;
-//font-family: 'Montserrat Subrayada', sans-serif;
-//font-family: 'Serif';
+//font-family: 'Quicksand', sans-serif;
+//font-family: 'Antic', sans-serif;
+//font-family: 'Text Me One', sans-serif;
+//font-family: 'Barrio', cursive;
+//font-family: 'Londrina Shadow', cursive;
+//font-family: 'Londrina Sketch', cursive;
+//font-family: "Zilla Slab Highlight", cursive;
 
 @import "config";
 @import "menu";
@@ -22,8 +21,9 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
+  font-family: "Text Me One", sans-serif, Segoe UI Tahoma, Geneva, Verdana,
+    sans-serif;
+  line-height: 1.3;
 }
 
 // HEADING
@@ -35,11 +35,18 @@ h3 {
   font-weight: 400;
 
   &.lg-heading {
-    font-family: "Londrina Outline", cursive;
+    font-family: "Londrina Shadow", cursive;
     font-size: 6rem;
   }
 
   &.sm-heading {
+    font-family: "Barrio", cursive;
+    margin-bottom: 2rem;
+    padding: 0.1rem 0.5rem;
+    background: rgba(lighten($primary-color, 2), 0.5);
+  }
+
+  &.sm-heading-main {
     font-family: "Codystar", cursive;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
@@ -124,6 +131,12 @@ main {
   background: lighten($primary-color, 5);
   padding: 0.5rem;
   border-bottom: $secondary-color 5px solid;
+
+  h3 {
+    font-family: "Zilla Slab Highlight", cursive;
+    font-size: 1.6rem;
+    color: $secondary-color;
+  }
 }
 
 //MY WORK PAGE

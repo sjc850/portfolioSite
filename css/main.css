@@ -378,10 +378,11 @@ main#home h1 {
     -webkit-transform: translate3d(100%, 0, 0);
   }
   .menu-branding .portrait {
-    background: url("https://s3-us-west-2.amazonaws.com/shanejcollins.work.pictures/tinyMobile.png") center;
+    background: url("https://s3-us-west-2.amazonaws.com/shanejcollins.work.pictures/tinyMobile.png")
+      center;
     width: 175px;
     height: 250px;
-    background-position: 52% 36%; 
+    background-position: 52% 36%;
   }
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";

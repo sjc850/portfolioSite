@@ -404,4 +404,8 @@ main#home h1 {
   .projects {
     grid-template-columns: 1fr;
   }
+
+  body#bg-img .overlay {
+    height: 120vh;
+  }
 }

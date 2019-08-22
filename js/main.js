@@ -13,6 +13,8 @@ let showMenu = false;
 
 menuBtn.addEventListener("click", toggleMenu);
 
+//START MAGIC
+
 function toggleMenu() {
   if (!showMenu) {
     menuBtn.classList.add("close");
@@ -34,3 +36,4 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+//OKAY END OF MAGIC
